@@ -5,6 +5,7 @@
    <script type="text/javascript" src="js/randomGen.js"></script>
 </head>
 <body>
+
 <div class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
@@ -19,14 +20,6 @@
           <ul class="nav navbar-nav">
             <li class="dropdown">
               <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="themes">Themes <span class="caret"></span></a>
-              <ul class="dropdown-menu" aria-labelledby="themes">
-                <li><a href="../default/">Default</a></li>
-                <li class="divider"></li>
-                <li><a href="../yeti/">Yeti</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="../help/">Help</a>
             </li>
             <li>
               <a href="http://news.bootswatch.com">Blog</a>
@@ -34,9 +27,7 @@
             <li class="dropdown">
               <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="download">Download <span class="caret"></span></a>
               <ul class="dropdown-menu" aria-labelledby="download">
-                <li><a href="./bootstrap.min.css">bootstrap.min.css</a></li>
                 <li><a href="./bootstrap.css">bootstrap.css</a></li>
-
               </ul>
             </li>
           </ul>
@@ -49,17 +40,31 @@
         </div>
       </div>
     </div>
+
 <br>
 <br>
- <div>
+<div class="container-fluid">
+  <div class="row">
 
 
+<div class="jumbotron">
+  <h1>Odds of Collision</h1>
+  <p>The odds are less than 1 in a <a href="http://en.wikipedia.org/wiki/Decillion">Decillion</a>... </p>
+</div>
 
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+  <a href="#" id="generateXXID" class="btn btn-default btn-lg btn-block">Block level button</a>
+  </div>
+</div>
 
    <br/>
    <br/>
-   <button id="generateXXID" class="btn btn-default btn-lg btn-block" value="getXXID"/>
-   <span id="xxid"></span>
+
+<span id="xxid"></span>
+
+
+
 <script>
 document.getElementById('generateXXID').onclick = function() {
    document.getElementById('xxid').innerHTML = Math.xxid();
@@ -67,8 +72,10 @@ document.getElementById('generateXXID').onclick = function() {
 };
 document.getElementById('xxid').innerHTML = Math.xxid();
 </script>
+
 </div>
-<footer>
-</footer>
+</div>
+</div>
+<br>
 </body>
 </html>
