@@ -53,9 +53,18 @@
     <th>example ids</th>
     <th>total possible</th>
   </tr>
-  <script>writexxidTable()</script><tr>
+ <tr>
+     <a href="#" id="generateXXID" class="btn btn-primary btn-xs">Math.xxid()</a>
+
+     <script>
+     document.getElementById('generateXXID').onclick = function() {
+        document.getElementById('xxid').innerHTML = Math.xxid();
+
+     };
+     document.getElementById('xxid').innerHTML = Math.xxid();
+     </script>
 <td>Math.xxid()</td>
-<td>8D34DF64-F8B2-4D71-B17F-18082CE45632</td>
+<td id="xxid">8D34DF64-F8B2-4D71-B17F-18082CE45632</td>
 <td style="text-align:right">5.3x10<sup>36</sup></td>
 </tr><tr>
 </tr><tr>
