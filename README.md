@@ -1,3 +1,5 @@
+http://nickfogle.github.io/StringGenerator/index.html
+
 #Base 64 String Generator
 
 A truly random string generator written in JavaScript. This solution is more reliably randomn than math.random().
